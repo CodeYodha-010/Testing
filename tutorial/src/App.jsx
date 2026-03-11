@@ -9,6 +9,7 @@ import Increment from './components/Increment'
 import  data from './data'
 import Tours from './components/Tours'
 import Testimonial from './components/Testimonial'
+import Heelo from './components/Heelo'
 // import Filter from './components/Filter'
 // import { ToastContainer } from 'react-toastify'
 // import "react-toastify/ReactToastify.css"
@@ -103,6 +104,8 @@ function App(props) {
 
 {/* <Testimonial data={data} /> */}
 {/* <Card reviews={data}></Card> */}
+<Heelo />
+
 <form onSubmit={submithandler}>
   <input type='text '
    placeholder='first name'
