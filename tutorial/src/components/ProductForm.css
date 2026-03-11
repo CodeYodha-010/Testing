@@ -1,0 +1,75 @@
+/* Center the form on the page */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #f3f4f6; /* Light grey background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Form Container */
+form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Space between form groups */
+}
+
+/* Styling for each input group */
+.newtitle, .newdate {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Labels */
+label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151; /* Dark grey text */
+  text-transform: capitalize;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="date"] {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Input Focus State */
+input[type="text"]:focus,
+input[type="date"]:focus {
+  border-color: #2563eb; /* Blue border */
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1); /* Soft blue glow */
+}
+
+/* Button Styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #2563eb; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Button Hover State */
+button[type="submit"]:hover {
+  background-color: #1d4ed8; /* Darker blue on hover */
+}
